@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,36 +9,45 @@
     <link rel="stylesheet" href="bundle.min.css">
     <script src="bundle.min.js" defer></script>
 </head>
+
 <body>
-    <div class="startWindow modal invisible">
-        <div>
-            <div class="img"></div>
-            <button class="startButton btn">Começar</button>
-        </div>
-    </div>
-    
     <div class="container">
-        <div class="gameWindow modal">
-            <div class=""></div>
-                <img class="imgSuperHero" src="" alt="">
-            <div class="commands">
-                    <h2>
-                        Fulano morreu no estalo do thanos?
-                    </h2>
-                    <div class="options">
-                        <button class="yesButton btn">SIM</button>
-                        <button class="noButton btn">NÃO</button>
-                    </div>
+        <div class="startWindow modal">
+            <div class="img">
+                <img src="https://i.kinja-img.com/gawker-media/image/upload/s--7G_xxjFj--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/layqlsejklmdghxevoac.jpg"
+                    alt="">
+            </div>
+            <div class="center">
+                <h2>Quem sobreviveu ao estalo do Thanos?</h2>
+                <button class="startButton btn">Começar</button>
+            </div>
         </div>
+
+
+        <div class="gameWindow modal invisible">
+            <div class=""></div>
+            <img class="imgSuperHero" src="" alt="">
+            <div class="commands">
+                <h2>
+                    Fulano morreu no estalo do thanos?
+                </h2>
+                <div class="options">
+                    <button class="yesButton btn">SIM</button>
+                    <button class="noButton btn">NÃO</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="resultWindow invisible">
+            <div class="modal">
+                <img class="resultImage" src="" alt="">
+                <h2 class="resultText"></h2>
+                <button class="againButton btn">Jogar novamente</button>
+            </div>
         </div>
     </div>
 
-    <div class="resultWindow invisible">
-        <div class="modal">
-            <img class="resultImage" src="" alt="">
-            <h2 class="resultText"></h2>
-            <button class="againButton btn">Jogar novamente</button>
-        </div>
-    </div>
+
 </body>
+
 </html>

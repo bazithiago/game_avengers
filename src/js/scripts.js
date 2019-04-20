@@ -31,13 +31,14 @@ const heroes = [
     }
 ];
 
-const hero = heroes[Math.floor(Math.random() * heroes.length)];
-const randomHero = function() {
+let hero = heroes[Math.floor(Math.random() * heroes.length)];
+
+const printHero = function() {
     printText.innerHTML = `${hero.name} morreu no estalo do Thanos?`;
     imgSuperHero.src = hero.url;
 }
 
-randomHero();
+printHero();
 
 function checkYes() {
     gameWindow.classList.toggle('invisible');
@@ -67,10 +68,19 @@ function checkNo () {
     }
 }
 
-function refresh (){
-    location.reload();
+function startGame() {
+    startWindow.classList.toggle('invisible');
+    gameWindow.classList.toggle('invisible');
+};
+
+function reload (){
+    hero = heroes[Math.floor(Math.random() * heroes.length)];
+    printHero();
+    resultWindow.classList.toggle('invisible');
+    gameWindow.classList.toggle('invisible');
 }
 
+startButton.onclick = startGame;
 yesButton.onclick = checkYes;
 noButton.onclick = checkNo;
-againButton.onclick = refresh;
+againButton.onclick = reload;
