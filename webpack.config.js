@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
     entry: [
         './src/scss/main.scss',
+        './src/js/arrayHeroes.js',
         './src/js/scripts.js'
     ],
     output: {

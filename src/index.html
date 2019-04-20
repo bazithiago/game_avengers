@@ -6,9 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Morreu no estalo do Thanus?</title>
     <link rel="stylesheet" href="bundle.min.css">
-    <script src="bundle.min.js"></script>
+    <script src="bundle.min.js" defer></script>
 </head>
 <body>
+    <div class="startWindow modal invisible">
+        <div>
+            <div class="img"></div>
+            <button class="startButton btn">Começar</button>
+        </div>
+    </div>
     
+    <div class="container">
+        <div class="gameWindow modal">
+            <div class=""></div>
+                <img class="imgSuperHero" src="" alt="">
+            <div class="commands">
+                    <h2>
+                        Fulano morreu no estalo do thanos?
+                    </h2>
+                    <div class="options">
+                        <button class="yesButton btn">SIM</button>
+                        <button class="noButton btn">NÃO</button>
+                    </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="resultWindow invisible">
+        <div class="modal">
+            <img class="resultImage" src="" alt="">
+            <h2 class="resultText"></h2>
+            <button class="againButton btn">Jogar novamente</button>
+        </div>
+    </div>
 </body>
 </html>

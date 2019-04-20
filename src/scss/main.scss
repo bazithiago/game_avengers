@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+@import "modal";
+@import "container";
+
+body {
+  margin: 0%;
+  font-family: "Questrial", sans-serif;
+  background-color: #ffec63;
+  background-image: linear-gradient(
+      45deg,
+      #ffd966 25%,
+      transparent 25%,
+      transparent 75%,
+      #ffd966 75%,
+      #ffd966
+    ),
+    linear-gradient(
+      -45deg,
+      #ffd966 25%,
+      transparent 25%,
+      transparent 75%,
+      #ffd966 75%,
+      #ffd966
+    );
+  background-size: 60px 60px;
+  background-position: 0 0;
+//   animation: slide 4s infinite linear;
+}
+
+.invisible {
+    display: none;
+}
+
+img {
+    width: 500px;
+    height: 300px;
+    // background-color: red;
+    margin-bottom: 15px;
+}
