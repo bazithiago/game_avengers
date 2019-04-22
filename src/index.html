@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Morreu no estalo do Thanus?</title>
+    <title>Quem sobreviveu ao estalo do Thanos?</title>
     <link rel="stylesheet" href="bundle.min.css">
     <script src="bundle.min.js" defer></script>
 </head>
@@ -13,9 +13,7 @@
 <body>
     <div class="container">
         <div class="startWindow modal">
-            <div class="img">
-                <img src="https://i.kinja-img.com/gawker-media/image/upload/s--7G_xxjFj--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/layqlsejklmdghxevoac.jpg"
-                    alt="">
+            <div class="img imgStart">
             </div>
             <div class="center">
                 <h2>Quem sobreviveu ao estalo do Thanos?</h2>
@@ -25,11 +23,12 @@
 
 
         <div class="gameWindow modal invisible">
-            <div class=""></div>
-            <img class="imgSuperHero" src="" alt="">
+            <div class="img imgSuperHero">
+
+            </div>
             <div class="commands">
                 <h2>
-                    Fulano morreu no estalo do thanos?
+
                 </h2>
                 <div class="options">
                     <button class="yesButton btn">SIM</button>
@@ -40,9 +39,18 @@
 
         <div class="resultWindow invisible">
             <div class="modal">
-                <img class="resultImage" src="" alt="">
+                <div class="img resultImage"></div>
                 <h2 class="resultText"></h2>
-                <button class="againButton btn">Jogar novamente</button>
+                <button class="againButton btn">Voltar</button>
+            </div>
+        </div>
+
+        <div class="finalWindow invisible">
+            <div class="modal">
+                <div class="img scoreImage"></div>
+                <h2 class="">Resultado:</h2>
+                <h2 class="scoreText"></h2>
+                <button class="refresh btn">Refazer</button>
             </div>
         </div>
     </div>

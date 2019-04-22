@@ -1,5 +1,6 @@
 .modal {
-  width: 60vw;
+  width: 55vw;
+  // height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +12,7 @@
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
 
   @media (max-width: 576px) {
-    width: 60vw;
+    height: 65vh;
   }
 }
 .message {
@@ -26,7 +27,7 @@
   background: white;
   padding: 0.3rem 3.4rem;
   border: 3px solid black;
-  margin-right: 2.6rem;
+  // margin-right: 2.6rem;
   box-shadow: 0 0 0 black;
   transition: all 0.2s;
 
@@ -43,9 +44,16 @@
     box-shadow: 0 0 0 black;
     transform: translate(0, 0);
   }
+  
+  @media (max-width: 576px) {
+    width: 54vw;
+    margin-bottom: 10px;
+  }
+
 }
 .options {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
